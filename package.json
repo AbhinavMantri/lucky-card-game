@@ -1,0 +1,29 @@
+{
+  "name": "card-game",
+  "version": "1.0.0",
+  "description": "Card",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhinavMantri/lucky-card-game.git"
+  },
+  "author": "Abhinav Mantri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhinavMantri/lucky-card-game/issues"
+  },
+  "homepage": "https://github.com/AbhinavMantri/lucky-card-game#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
