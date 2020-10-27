@@ -1,0 +1,89 @@
+.game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    transition: .3s all ease-in-out;
+    transform: translateY(-50%) scaleY(0);
+    z-index: 2;
+}
+
+.game-overlay.show {
+    transform: translateY(0) scaleY(1);
+}
+
+.game-box {
+    max-width: 960px;
+    background-color: #155843;
+    height: 100%;
+    margin: 0 auto;
+    border: 15px solid #FFF;
+    color: #FFF;
+    padding: 15px;
+}
+
+.game-box h3 {
+    text-align: center;
+}
+
+.ask_shuffle_box {
+    max-width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 2px solid #FFF;
+    padding: 12px;
+}
+
+.ask_shuffle_box b,
+.suffle_done b,
+.winner-pop b {
+    color: #d7a322;
+}
+
+.winner-pop,
+.tie-pop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 3;
+    transition: .3s all ease-in-out;
+    transform: scale(0);
+}
+
+.winner-pop.show,
+.tie-pop.show {
+    transform: scale(1);
+}
+
+.winner-box,
+.tie-box {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #155843;
+    color: #FFF;
+    min-height: 240px;
+    padding: 24px;
+    text-align: center;
+    border: 15px solid #FFF;
+}
+
+.tie-box {
+    max-width: 800px;
+    min-height: 320px;
+}
+
+.tie-cards {
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
